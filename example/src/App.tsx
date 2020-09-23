@@ -3,7 +3,7 @@ import {Typography} from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 const App = () => {
-  return <Typography value={2} label="Testando componente"/>
+  return <Typography value={1} label="Hello World!"/>
 }
 
 export default App
