@@ -1,11 +1,11 @@
 import * as React from 'react'
 
 interface Props {
-  text: string
+  value: number
 }
 
-const Typography = ({ text }: Props) => {
-  return <div></div>
+const Typography = ({ value }: Props) => {
+  return <div>{value}</div>
 }
 
 export default Typography
