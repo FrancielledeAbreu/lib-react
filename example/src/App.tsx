@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { Modal } from 'modal'
-import 'modal/dist/index.css'
+import { Modal } from '../../../lib-kenzie/src/components/Modal'
 
 const App = () => {
   return (
