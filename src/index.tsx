@@ -1,10 +1,19 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import { ModalDiv, Overlay } from './style'
 
 interface Props {
-  text: string
+  children?: string
+  isOpen: boolean
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const Modal = ({ children, isOpen }: Props) => {
+  return (
+    <div>
+      {isOpen && (
+        <Overlay>
+          <ModalDiv>{children}</ModalDiv>
+        </Overlay>
+      )}
+    </div>
+  )
 }
