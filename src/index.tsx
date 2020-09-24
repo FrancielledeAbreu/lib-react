@@ -1,10 +1,15 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
-interface Props {
-  text: string
+const backTop = () => {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ButtomTop = () => {
+  return (
+    <button onClick={() => backTop()}>
+      <AiOutlineArrowUp />
+    </button>
+  )
 }

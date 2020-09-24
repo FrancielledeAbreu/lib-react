@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'lib-kenzie'
-import 'lib-kenzie/dist/index.css'
+import { ButtomTop } from 'lib-kenzie'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ButtomTop />
 }
 
 export default App
