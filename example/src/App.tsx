@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { ExampleComponent } from 'lib-kenzie'
+import { InputAction } from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const HandleClick = () => {
+    return console.log('Hello')
+  }
+
+  return <InputAction type={true} click={HandleClick} children='search' />
 }
 
 export default App
