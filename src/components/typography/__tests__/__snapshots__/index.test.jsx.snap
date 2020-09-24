@@ -1,9 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Snapshot does not render higher than more six 1`] = `
 <div
   className="sc-bdnylx jIjVkI"
 >
-  <h6 />
+  <h6>
+    Teste
+  </h6>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 1 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h1>
+    Teste
+  </h1>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 2 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h2>
+    Teste
+  </h2>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 3 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h3>
+    Teste
+  </h3>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 4 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h4>
+    Teste
+  </h4>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 5 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h5>
+    Teste
+  </h5>
+</div>
+`;
+
+exports[`Snapshot renders correctly when the value is 6 1`] = `
+<div
+  className="sc-bdnylx jIjVkI"
+>
+  <h6>
+    Teste
+  </h6>
 </div>
 `;
