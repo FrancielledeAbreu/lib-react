@@ -9,10 +9,8 @@ export const DivStyle = styled.div`
   button:hover {
     opacity: 0.7;
     font-style: italic;
-
-   
+  }
 `
-
 export const InputStyle = styled.input`
   height: 40px;
   width: 400px;

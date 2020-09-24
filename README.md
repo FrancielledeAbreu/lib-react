@@ -15,15 +15,23 @@ npm install --save lib-kenzie
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'lib-kenzie'
+import InputAction from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <InputAction type={true} click={() => {}} children='search' />
   }
 }
 ```
+
+## Props
+
+\*Type - boolean values only, when true the input will receive type text, however if it is false it will receive type number.
+
+\*Click - function that will be called when the button is clicked
+
+\*Children - The button label, default is a search icon (string === 'search'), however an string can be send to the button label.
 
 ## License
 
