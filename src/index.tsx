@@ -1,10 +1,5 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import HoverButton from './components/button/index'
+import DropNotifier from './components/dropNorifier/index'
+import ParallaxCard from './containers/parallaxCard/index'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { HoverButton, DropNotifier, ParallaxCard }
