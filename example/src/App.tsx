@@ -1,9 +1,19 @@
 import React from 'react'
-import {Typography} from 'lib-kenzie'
+
+import { Input, Typography } from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 const App = () => {
-  return <Typography value={1} label="Hello World!"/>
+  const HandleClick = () => {
+    return console.log('Hello')
+  }
+
+  return (
+    <div>
+      <Input type={true} onClick={HandleClick} children='search' />
+      <Typography value={1} label='Hello World!' />
+    </div>
+  )
 }
 
 export default App
