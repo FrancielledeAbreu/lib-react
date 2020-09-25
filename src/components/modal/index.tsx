@@ -6,7 +6,7 @@ interface Props {
   isOpen: boolean
 }
 
-export const Modal = ({ children, isOpen }: Props) => {
+const Modal = ({ children, isOpen }: Props) => {
   return (
     <div>
       {isOpen && (
@@ -17,3 +17,5 @@ export const Modal = ({ children, isOpen }: Props) => {
     </div>
   )
 }
+
+export default Modal
