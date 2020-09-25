@@ -1,41 +1,31 @@
 import React from 'react'
-import styled from 'styled-components';
-import { BsBookmarkPlus, BsBookmarkFill, BsBookmarkCheck } from 'react-icons/bs';
-
-
-import { HoverButton, DropNotifier, ParallaxCard } from 'lib-kenzie'
-import 'lib-kenzie/dist/index.css'
+import { Input, Typography, Modal } from 'lib-kenzie'
+// import 'lib-kenzie/dist/index.css'
 
 const App = () => {
+  const HandleClick = () => {
+    return console.log('Hello')
+  }
 
-  const handleOnClick = () => console.log("funcionou")
   return (
-    <Container>
-      <DropNotifier />
-      <HoverButton onClick={handleOnClick}>
-        <p>Click aqui</p>
-        <BsBookmarkPlus />
-      </HoverButton>
-      <HoverButton onClick={handleOnClick}>
-        <BsBookmarkFill />
-        <p>Adicionar amigo</p>
-      </HoverButton>
-      <HoverButton onClick={handleOnClick}>
-        <BsBookmarkCheck />
-        <p>Avaliar conteudo</p>
-      </HoverButton>
-      <ParallaxCard />
-    </Container>
-
+    <div>
+      <Input type={true} onClick={HandleClick} children='search' />
+      <Typography value={1} label='Hello World!' />
+      <Modal isOpen={true}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo
+        non purus sodales congue. Vestibulum elit dui, venenatis vel iaculis et,
+        fringilla vitae lectus. Praesent vitae est in elit imperdiet suscipit a
+        vel libero. Morbi luctus maximus tortor in convallis. Pellentesque
+        fermentum non lorem vitae accumsan. Vivamus laoreet quis arcu ut mollis.
+        Aenean pretium metus leo, a scelerisque lorem lacinia at. Aenean ac
+        interdum tortor, id mollis nibh. Nullam tristique vestibulum nunc vel
+        aliquet. Phasellus dolor augue, molestie vel mauris eget, auctor
+        lobortis dui. Etiam hendrerit semper mauris eget lacinia. Nullam
+        fringilla augue ut euismod lacinia. Nunc quis ligula ut mauris faucibus
+        pretium. Aliquam nec cursus est. Integer eu fringilla lectus.
+      </Modal>
+    </div>
   )
 }
 
 export default App
-
-const Container = styled.div`
-width: 100vw;
-height: 100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-`
