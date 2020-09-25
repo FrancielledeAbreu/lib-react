@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Test renders correctly 1`] = `<div />`;
+
+exports[`Modal Test renders correctly true 1`] = `
+<div>
+  <div
+    className="sc-gtssRu lRJPQ"
+  >
+    <div
+      className="sc-bdnylx eWJFro"
+    >
+      Teste
+    </div>
+  </div>
+</div>
+`;
