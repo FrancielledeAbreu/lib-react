@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { ButtomTop } from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ButtomTop).toBeTruthy()
   })
 })
