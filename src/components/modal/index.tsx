@@ -2,7 +2,7 @@ import * as React from 'react'
 import { ModalDiv, Overlay } from './style'
 
 interface Props {
-  children?: string
+  children?: string | React.ReactNode
   isOpen: boolean
 }
 
