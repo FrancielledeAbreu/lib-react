@@ -1,10 +1,4 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import Typography from './components/typography'
 
-interface Props {
-  text: string
-}
+export {Typography}
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
