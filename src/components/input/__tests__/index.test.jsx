@@ -1,7 +1,6 @@
 import React from 'react'
 import Input from '../index'
 import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
 
 describe('Snapshot', () => {
   it('renders correctly', () => {
