@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Input } from 'lib-kenzie'
+import { Input, Typography } from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 const App = () => {
@@ -8,7 +8,12 @@ const App = () => {
     return console.log('Hello')
   }
 
-  return <Input type={true} onClick={HandleClick} children='search' />
+  return (
+    <div>
+      <Input type={true} onClick={HandleClick} children='search' />
+      <Typography value={1} label='Hello World!' />
+    </div>
+  )
 }
 
 export default App
