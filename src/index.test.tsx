@@ -1,4 +1,4 @@
-import { Typography, Input, Modal } from '.'
+import { Typography, Input, Modal, HoverButton } from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
@@ -11,5 +11,9 @@ describe('ExampleComponent', () => {
 
   it('is truthy', () => {
     expect(Modal).toBeTruthy()
+  })
+
+  it('is truthy', () => {
+    expect(HoverButton).toBeTruthy()
   })
 })
