@@ -4,15 +4,15 @@ import { InputStyle, ButtonStyle, DivStyle } from './style'
 
 interface InputProps {
   type: boolean
-  click: () => void
+  onClick: () => void
   children: string
 }
 
-const Input = ({ type, click, children }: InputProps) => {
+const Input = ({ type, onClick, children }: InputProps) => {
   return (
     <DivStyle>
       <InputStyle type={type ? 'text' : 'number'} placeholder='Type here' />
-      <ButtonStyle onClick={click}>
+      <ButtonStyle onClick={onClick}>
         {children === 'search' ? <BiSearchAlt /> : children}
       </ButtonStyle>
     </DivStyle>

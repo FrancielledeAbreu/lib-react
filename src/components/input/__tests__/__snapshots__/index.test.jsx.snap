@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input Test renders correctly 1`] = `
+exports[`Snapshot renders correctly 1`] = `
 <div
-  className="sc-bdnylx fwNoSW"
+  className="sc-bdnylx efrHDJ"
 >
   <input
     className="sc-gtssRu iRLKYG"
@@ -18,9 +18,9 @@ exports[`Input Test renders correctly 1`] = `
 </div>
 `;
 
-exports[`Input Test renders correctly true 1`] = `
+exports[`Snapshot renders correctly true 1`] = `
 <div
-  className="sc-bdnylx fwNoSW"
+  className="sc-bdnylx efrHDJ"
 >
   <input
     className="sc-gtssRu iRLKYG"

@@ -1,3 +1,3 @@
-import InputAction from './containers/input-action/index'
+import Input from './components/input/index'
 
-export { InputAction }
+export { Input }

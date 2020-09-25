@@ -15,12 +15,12 @@ npm install --save lib-kenzie
 ```tsx
 import React, { Component } from 'react'
 
-import InputAction from 'lib-kenzie'
+import Input from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <InputAction type={true} click={() => {}} children='search' />
+    return <Input type={true} click={() => {}} children='search' />
   }
 }
 ```

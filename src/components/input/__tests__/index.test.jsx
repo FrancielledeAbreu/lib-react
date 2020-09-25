@@ -1,20 +1,20 @@
 import React from 'react'
 import Input from '../index'
 import renderer from 'react-test-renderer'
+import { shallow } from 'enzyme'
 
-describe('Input Test', () => {
+describe('Snapshot', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Input type={false} click={() => {}} children='' />)
+      .create(<Input type={false} onClick={() => {}} children='' />)
       .toJSON()
 
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly true', () => {
-    const types = true
     const tree = renderer
-      .create(<Input type={types} click={() => {}} children='search' />)
+      .create(<Input type onClick={() => {}} children='search' />)
       .toJSON()
 
     expect(tree).toMatchSnapshot()
