@@ -16,6 +16,7 @@ export const Button = styled.button<newProps>`
   background: rgba(33, 90, 120);
   p {
     display: none;
+    color: white;
   }
   svg {
     transition: 0.2s;
