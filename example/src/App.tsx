@@ -1,17 +1,20 @@
 import React from 'react'
-import { Input, Typography, Modal } from 'lib-kenzie'
-// import 'lib-kenzie/dist/index.css'
+import { Input, Typography, Modal, HoverButton } from 'lib-kenzie'
 
 const App = () => {
-  const HandleClick = () => {
-    return console.log('Hello')
+  const handleClick = () => {
+    return console.log('Hello Input')
+  }
+
+  const onButtonClick = () => {
+    return console.log('Hello HoverButton')
   }
 
   return (
     <div>
-      <Input type={true} onClick={HandleClick} children='search' />
+      <Input type={true} onClick={handleClick} children='search' />
       <Typography value={1} label='Hello World!' />
-      <Modal isOpen={true}>
+      <Modal isOpen={false}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo
         non purus sodales congue. Vestibulum elit dui, venenatis vel iaculis et,
         fringilla vitae lectus. Praesent vitae est in elit imperdiet suscipit a
@@ -24,6 +27,7 @@ const App = () => {
         fringilla augue ut euismod lacinia. Nunc quis ligula ut mauris faucibus
         pretium. Aliquam nec cursus est. Integer eu fringilla lectus.
       </Modal>
+      <HoverButton onClick={onButtonClick}>Teste</HoverButton>
     </div>
   )
 }
