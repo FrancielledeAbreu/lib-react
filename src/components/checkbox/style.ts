@@ -70,3 +70,5 @@ export const DivStyles = styled.div`
     transform: rotate(45deg);
   }
 `
+
+// Based on w3shools doumentation : https://www.w3schools.com/howto/tryit.asp?filenam //
