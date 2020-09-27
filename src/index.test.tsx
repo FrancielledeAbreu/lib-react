@@ -1,4 +1,4 @@
-import { Typography, Input, Modal, HoverButton } from '.'
+import { Typography, Input, Modal, DropNotifierActions } from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
@@ -14,6 +14,6 @@ describe('ExampleComponent', () => {
   })
 
   it('is truthy', () => {
-    expect(HoverButton).toBeTruthy()
+    expect(DropNotifierActions).toBeTruthy()
   })
 })

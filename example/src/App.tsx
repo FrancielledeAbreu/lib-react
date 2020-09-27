@@ -1,17 +1,24 @@
-import React from 'react'
-import { Input, Typography, Modal } from 'lib-kenzie'
-// import 'lib-kenzie/dist/index.css'
+import React, { useState } from 'react'
+import { Input, Typography, Modal, DropNotifierActions } from 'lib-kenzie'
 
 const App = () => {
+
+  const [notify, setNotify] = useState(false)
+
   const HandleClick = () => {
     return console.log('Hello')
   }
 
   return (
     <div>
+      <DropNotifierActions onClick={() => setNotify(!notify)} visibility={notify}>
+        <p>O dados estão imcompletos
+           por favor preenche-los</p>
+      </DropNotifierActions>
+      <button onClick={() => setNotify(true)}>testar Alert</button>
       <Input type={true} onClick={HandleClick} children='search' />
       <Typography value={1} label='Hello World!' />
-      <Modal isOpen={true}>
+      <Modal isOpen={false}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo
         non purus sodales congue. Vestibulum elit dui, venenatis vel iaculis et,
         fringilla vitae lectus. Praesent vitae est in elit imperdiet suscipit a

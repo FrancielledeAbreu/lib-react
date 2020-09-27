@@ -1,7 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import DropNotifier from '../index'
-import { shallow } from 'enzyme'
 
 describe('Snapshot', () => {
   it('renders correctly', () => {
@@ -9,11 +8,4 @@ describe('Snapshot', () => {
 
     expect(tree).toMatchSnapshot()
   })
-})
-
-describe('Events', () => {
-  // teste para aparecer a div
-  // it('button onClick ', () => {
-  // //
-  // })
 })
