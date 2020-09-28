@@ -1,4 +1,4 @@
-import DropNotifierActions from './containers/dropNotifier/index'
+import DropNotifierActions from './containers/drop-notifier-actions/index'
 import HoverButton from './components/button/index'
 import Modal from './components/modal/index'
 import Input from './components/input/index'
