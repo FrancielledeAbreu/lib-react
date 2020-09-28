@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card } from 'lib-kenzie'
 import { AiOutlineAlert } from 'react-icons/ai';
+
+import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card, Checkbox } from 'lib-kenzie'
 
 const App = () => {
 
@@ -37,6 +38,10 @@ const App = () => {
         <AiOutlineAlert />
         <p>Alert</p>
       </HoverButton>
+      <Checkbox
+        inputCheck={['String-one', 'String-two', 'String-{...}']}
+        children='Hello Lib-Kenzie'
+      />
     </div>
   )
 }
