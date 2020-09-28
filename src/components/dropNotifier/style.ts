@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+interface Props {
+  visibility?: boolean
+}
 
 export const AlertBox = styled.div<Props>`
   display: flex;
