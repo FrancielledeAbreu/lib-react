@@ -1,6 +1,6 @@
 {
-  "name": "lib-kenzie",
-  "version": "1.0.0",
+  "name": "lib-kenzie-academy",
+  "version": "1.0.1",
   "description": "Made with create-react-library",
   "author": "https://gitlab.com/alanpires",
   "license": "MIT",
@@ -64,7 +64,6 @@
     "dist"
   ],
   "dependencies": {
-    "react-icons": "^3.11.0",
     "@types/enzyme": "^3.10.7",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/react-test-renderer": "^16.9.3",
