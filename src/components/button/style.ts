@@ -13,7 +13,7 @@ export const Button = styled.button<newProps>`
   padding: 2px;
   border-radius: 30%;
   transition: 0.3s;
-  background: rgba(33, 90, 120);
+  background: rgb(0, 209, 178);
   p {
     display: none;
     color: white;
@@ -49,7 +49,7 @@ export const Button = styled.button<newProps>`
       padding: 5px;
     }
     &:hover p {
-      font-size: 9px;
+      font-size: 10px;
       transition: 0.2s 0.1s;
       width: 40px;
       visibility: visible;
