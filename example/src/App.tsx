@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, Typography, Modal, DropNotifierActions, HoverButton } from 'lib-kenzie'
+import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card } from 'lib-kenzie'
 import { AiOutlineAlert } from 'react-icons/ai';
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
 
   return (
     <div>
+      <Card />
       <DropNotifierActions onClick={() => setNotify(!notify)} visibility={notify}>
         <p>O dados estão imcompletos
            por favor preenche-los</p>
