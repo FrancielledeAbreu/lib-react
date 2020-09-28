@@ -4,9 +4,10 @@ import { ModalDiv, Overlay, ButtonModal, ButtonDiv } from './style'
 interface Props {
   children?: string | React.ReactNode
   isOpen: boolean
+  onClose: boolean
 }
 
-const Modal = ({ children, isOpen }: Props) => {
+const Modal = ({ children, isOpen, onClose }: Props) => {
   const closeModal = () => {
     isOpen = false
   }
@@ -16,9 +17,11 @@ const Modal = ({ children, isOpen }: Props) => {
       {isOpen && (
         <Overlay>
           <ModalDiv>
-            <ButtonDiv>
-              <ButtonModal onClick={closeModal}>X</ButtonModal>
-            </ButtonDiv>
+            {onClose && (
+              <ButtonDiv>
+                <ButtonModal onClick={closeModal}>X</ButtonModal>
+              </ButtonDiv>
+            )}
             {children}
           </ModalDiv>
         </Overlay>

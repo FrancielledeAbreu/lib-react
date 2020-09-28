@@ -26,7 +26,7 @@ const App = () => {
       </DropNotifierActions>
       <Input type={true} onClick={handleClick} children='search' />
       <Typography value={1} label='Hello World!' />
-      <Modal isOpen={true}>
+      <Modal isOpen={true} onClose={false}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo non purus sodales
         congue. Vestibulum elit dui, venenatis vel iaculis et, fringilla vitae lectus. Praesent
         vitae est in elit imperdiet suscipit a vel libero. Morbi luctus maximus tortor in convallis.
