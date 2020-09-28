@@ -36,3 +36,20 @@ export const Overlay = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 `
+
+export const ButtonModal = styled.button`
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+`
+
+export const ButtonDiv = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-left: 750px;
+  flex-direction: column;
+`
