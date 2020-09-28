@@ -1,15 +1,24 @@
 import * as React from 'react'
-import { AiOutlineArrowUp } from 'react-icons/ai'
 
 const backTop = () => {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
 }
 
+const buttomStyle = {
+  backgroundColor: '#008CBA',
+  border: 'none',
+  color: 'white',
+  padding: '15px 32px',
+  fontSize: '16px',
+  margin: '4px 2px',
+  cursor: 'pointer'
+}
+
 const ButtomTop = () => {
   return (
-    <button onClick={() => backTop()}>
-      <AiOutlineArrowUp />
+    <button style={buttomStyle} onClick={() => backTop()}>
+      UP
     </button>
   )
 }
