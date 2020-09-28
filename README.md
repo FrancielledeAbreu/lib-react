@@ -15,9 +15,7 @@ npm install --save lib-kenzie
 ```tsx
 import React, { Component } from 'react'
 
-import Input from 'lib-kenzie'
-import Checkbox from 'lib-kenzie'
-
+import {Input, Checkbox, Card} from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
@@ -26,6 +24,7 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
+        <Card/>
       </>
     )
   }
@@ -45,6 +44,10 @@ class Example extends Component {
 \*inputCheck - array that allows only string elements, which will be the labels for each input type checkbox, so array.length is equivalent to the amount of inputs
 
 \*children - will be the section title, rendered inside an h2 tag
+
+## Props Card
+
+\*Children - can receive any ReactNode.
 
 ## License
 
