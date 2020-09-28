@@ -4,9 +4,7 @@ import renderer from 'react-test-renderer'
 
 describe('Modal Test', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Modal isOpen={false} children='Teste' />)
-      .toJSON()
+    const tree = renderer.create(<Modal isOpen={false} children='Teste' />).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
