@@ -14,8 +14,8 @@ npm install --save lib-kenzie
 
 ```tsx
 import React, { Component } from 'react'
+import { Input, Checkbox, Typography, Card } from 'lib-kenzie'
 
-import {Input, Checkbox, Card} from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
@@ -24,7 +24,8 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
-        <Card/>
+        <Typography value={1} label='Hello World!' />
+        <Card />
       </>
     )
   }
@@ -44,6 +45,12 @@ class Example extends Component {
 \*inputCheck - array that allows only string elements, which will be the labels for each input type checkbox, so array.length is equivalent to the amount of inputs
 
 \*children - will be the section title, rendered inside an h2 tag
+
+## Props Typography
+
+\*value - Props type number to render the heading tag according to the send value type, for example if the value is 1 the Typography will be composed by the H1 tag.
+
+\*label - Receives a string or React.ReactNode, which will correspond to the content of the heading tag
 
 ## Props Card
 
