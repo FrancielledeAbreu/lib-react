@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Typography, Modal, HoverButton } from 'lib-kenzie'
+import { Input, Typography, Modal, HoverButton, Checkbox } from 'lib-kenzie'
 
 const App = () => {
   const handleClick = () => {
@@ -28,6 +28,10 @@ const App = () => {
         pretium. Aliquam nec cursus est. Integer eu fringilla lectus.
       </Modal>
       <HoverButton onClick={onButtonClick}>Teste</HoverButton>
+      <Checkbox
+        inputCheck={['String-one', 'String-two', 'String-{...}']}
+        children='Hello Lib-Kenzie'
+      />
     </div>
   )
 }
