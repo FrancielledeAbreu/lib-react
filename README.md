@@ -14,7 +14,7 @@ npm install --save lib-kenzie
 
 ```tsx
 import React, { Component } from 'react'
-import { Input, Checkbox, Typography, Card , DropNotifierActions} from 'lib-kenzie'
+import { Input, Checkbox, Typography, Card, DropNotifierActions } from 'lib-kenzie'
 
 import 'lib-kenzie/dist/index.css'
 
@@ -24,8 +24,13 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
-        <Card/>
-        <DropNotifierActions onClick={() => {/*callback function here*/}} visibility={/* boolean */}>
+        <Card />
+        <DropNotifierActions
+          onClick={() => {
+            /*callback function here*/
+          }}
+          visibility={/* boolean */}
+        >
           //children here
         </DropNotifierActions>
         <Typography value={1} label='Hello World!' />
@@ -59,14 +64,13 @@ class Example extends Component {
 
 \*Children - can receive any ReactNode.
 
-## Props Input
+## Props DropNotifierActions
 
 \*visibility -show and hide the alert.
 
 \*onClick - function that will be called when the close button is clicked
 
 \*Children - can receive any ReactNode.
-
 
 ## License
 
