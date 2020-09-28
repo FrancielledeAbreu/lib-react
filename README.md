@@ -14,11 +14,7 @@ npm install --save lib-kenzie
 
 ```tsx
 import React, { Component } from 'react'
-<<<<<<< HEAD
-import { Input, Checkbox, Typography, Card, DropNotifierActions, Modal } from 'lib-kenzie'
-=======
-import { Input, Checkbox, Typography, Card, DropNotifierActions, ButtomTop } from 'lib-kenzie'
->>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
+import { Input, Checkbox, Typography, Card, DropNotifierActions, ButtomTop, Modal } from 'lib-kenzie'
 
 import 'lib-kenzie/dist/index.css'
 
@@ -28,10 +24,7 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
-<<<<<<< HEAD
-=======
         <ButtomTop />
->>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
         <Card />
         <DropNotifierActions
           onClick={() => {
