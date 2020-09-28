@@ -15,23 +15,39 @@ npm install --save lib-kenzie
 ```tsx
 import React, { Component } from 'react'
 
-import Input from 'lib-kenzie'
+import {Input, Checkbox, Card} from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <Input type={true} click={() => {}} children='search' />
+    return (
+      <>
+        <Input type={true} click={() => {}} children='search' />
+        <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
+        <Card/>
+      </>
+    )
   }
 }
 ```
 
-## Props
+## Props Input
 
 \*Type - boolean values only, when true the input will receive type text, however if it is false it will receive type number.
 
 \*Click - function that will be called when the button is clicked
 
 \*Children - The button label, default is a search icon (string === 'search'), however an string can be send to the button label.
+
+## Props Checkbox
+
+\*inputCheck - array that allows only string elements, which will be the labels for each input type checkbox, so array.length is equivalent to the amount of inputs
+
+\*children - will be the section title, rendered inside an h2 tag
+
+## Props Card
+
+\*Children - can receive any ReactNode.
 
 ## License
 
