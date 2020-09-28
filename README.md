@@ -14,7 +14,11 @@ npm install --save lib-kenzie
 
 ```tsx
 import React, { Component } from 'react'
+<<<<<<< HEAD
+import { Input, Checkbox, Typography, Card, DropNotifierActions, Modal } from 'lib-kenzie'
+=======
 import { Input, Checkbox, Typography, Card, DropNotifierActions, ButtomTop } from 'lib-kenzie'
+>>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
 
 import 'lib-kenzie/dist/index.css'
 
@@ -24,7 +28,10 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
+<<<<<<< HEAD
+=======
         <ButtomTop />
+>>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
         <Card />
         <DropNotifierActions
           onClick={() => {
@@ -35,7 +42,17 @@ class Example extends Component {
           //children here
         </DropNotifierActions>
         <Typography value={1} label='Hello World!' />
-      </>
+        <Modal isOpen={true} onClose={false}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo non purus sodales
+        congue. Vestibulum elit dui, venenatis vel iaculis et, fringilla vitae lectus. Praesent
+        vitae est in elit imperdiet suscipit a vel libero. Morbi luctus maximus tortor in convallis.
+        Pellentesque fermentum non lorem vitae accumsan. Vivamus laoreet quis arcu ut mollis. Aenean
+        pretium metus leo, a scelerisque lorem lacinia at. Aenean ac interdum tortor, id mollis
+        nibh. Nullam tristique vestibulum nunc vel aliquet. Phasellus dolor augue, molestie vel
+        mauris eget, auctor lobortis dui. Etiam hendrerit semper mauris eget lacinia. Nullam
+        fringilla augue ut euismod lacinia. Nunc quis ligula ut mauris faucibus pretium. Aliquam nec
+        cursus est. Integer eu fringilla lectus.
+      </Modal>
     )
   }
 }
@@ -76,5 +93,11 @@ class Example extends Component {
 \*onClick - function that will be called when the close button is clicked
 
 \*Children - can receive any ReactNode.
+
+## Props Modal
+
+\*isOpen - accepts a boolean value that open and close the Modal. If it's true, the modal will appear, otherwise it will disappear
+\*onClose - accepts a boolean value that show the closing button. If it's true, the button will appear, otherwise it will disappear
+\*Children - Can receive any ReactNode
 
 ## License
