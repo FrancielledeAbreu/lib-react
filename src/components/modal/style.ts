@@ -17,7 +17,7 @@ export const ModalDiv = styled.div`
   flex-direction: column;
 
   @media (max-width: 1200px) {
-    width: 80vw;
+    width: 70vw;
     margin-left: 5vw;
   }
 
