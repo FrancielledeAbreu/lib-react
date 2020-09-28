@@ -15,9 +15,7 @@ npm install --save lib-kenzie
 ```tsx
 import React, { Component } from 'react'
 
-import Input from 'lib-kenzie'
-import Checkbox from 'lib-kenzie'
-
+import {Input, Checkbox, Card, ButtomTop} from 'lib-kenzie'
 import 'lib-kenzie/dist/index.css'
 
 class Example extends Component {
@@ -26,6 +24,8 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
+        <Card/>
+        <ButtomTop />
       </>
     )
   }
@@ -49,3 +49,10 @@ class Example extends Component {
 ## ButtomTop
 
 \*ButtomTop - is a buttom, when you click, leave you to top of the page.
+
+## Props Card
+
+\*Children - can receive any ReactNode.
+
+## License
+

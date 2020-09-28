@@ -1,17 +1,24 @@
-import React from 'react'
-import { Input, Typography, Modal, HoverButton, ButtomTop } from 'lib-kenzie'
+import React, { useState } from 'react'
+import { AiOutlineAlert } from 'react-icons/ai';
+
+import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card, Checkbox, ButtomTop } from 'lib-kenzie'
 
 const App = () => {
+
+  const [notify, setNotify] = useState(false)
+
   const handleClick = () => {
-    return console.log('Hello Input')
+    return console.log('Hello')
   }
 
-  const onButtonClick = () => {
-    return console.log('Hello HoverButton')
-  }
 
   return (
     <div>
+      <Card />
+      <DropNotifierActions onClick={() => setNotify(!notify)} visibility={notify}>
+        <p>O dados estão imcompletos
+           por favor preenche-los</p>
+      </DropNotifierActions>
       <Input type={true} onClick={handleClick} children='search' />
       <Typography value={1} label='Hello World!' />
       <Modal isOpen={false}>
@@ -27,9 +34,16 @@ const App = () => {
         fringilla augue ut euismod lacinia. Nunc quis ligula ut mauris faucibus
         pretium. Aliquam nec cursus est. Integer eu fringilla lectus.
       </Modal>
-      <HoverButton onClick={onButtonClick}>Teste</HoverButton>
+      <HoverButton onClick={() => setNotify(!notify)}>
+        <AiOutlineAlert />
+        <p>Alert</p>
+      </HoverButton>
+      <Checkbox
+        inputCheck={['String-one', 'String-two', 'String-{...}']}
+        children='Hello Lib-Kenzie'
+      />
       <ButtomTop />
-    </div>
+    </div >
   )
 }
 
