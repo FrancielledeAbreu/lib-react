@@ -9,6 +9,7 @@ import {
   HoverButton,
   Card,
   Checkbox,
+  ButtomTop,
 } from 'lib-kenzie'
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
         inputCheck={['String-one', 'String-two', 'String-{...}']}
         children='Hello Lib-Kenzie'
       />
+      <ButtomTop />
     </div>
   )
 }

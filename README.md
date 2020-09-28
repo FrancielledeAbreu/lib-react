@@ -14,7 +14,11 @@ npm install --save lib-kenzie
 
 ```tsx
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { Input, Checkbox, Typography, Card, DropNotifierActions, Modal } from 'lib-kenzie'
+=======
+import { Input, Checkbox, Typography, Card, DropNotifierActions, ButtomTop } from 'lib-kenzie'
+>>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
 
 import 'lib-kenzie/dist/index.css'
 
@@ -24,6 +28,10 @@ class Example extends Component {
       <>
         <Input type={true} click={() => {}} children='search' />
         <Checkbox inputCheck={['String-one', 'String-two']} children='Hello' />
+<<<<<<< HEAD
+=======
+        <ButtomTop />
+>>>>>>> 863733ed40f50e9c0e0f159d45c70614ff647a7f
         <Card />
         <DropNotifierActions
           onClick={() => {
@@ -64,6 +72,10 @@ class Example extends Component {
 
 \*children - will be the section title, rendered inside an h2 tag
 
+## ButtomTop
+
+\*ButtomTop - is a buttom, when you click, leave you to top of the page.
+
 ## Props Typography
 
 \*value - Props type number to render the heading tag according to the send value type, for example if the value is 1 the Typography will be composed by the H1 tag.
@@ -74,7 +86,7 @@ class Example extends Component {
 
 \*Children - can receive any ReactNode.
 
-## Props Input
+## Props DropNotifierActions
 
 \*visibility -show and hide the alert.
 
@@ -89,5 +101,3 @@ class Example extends Component {
 \*Children - Can receive any ReactNode
 
 ## License
-
-MIT © [https://gitlab.com/alanpires](https://github.com/https://gitlab.com/alanpires)
