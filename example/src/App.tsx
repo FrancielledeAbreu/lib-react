@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineAlert } from 'react-icons/ai';
 
-import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card, Checkbox } from 'lib-kenzie'
+import { Input, Typography, Modal, DropNotifierActions, HoverButton, Card, Checkbox, ButtomTop } from 'lib-kenzie'
 
 const App = () => {
 
@@ -42,7 +42,8 @@ const App = () => {
         inputCheck={['String-one', 'String-two', 'String-{...}']}
         children='Hello Lib-Kenzie'
       />
-    </div>
+      <ButtomTop />
+    </div >
   )
 }
 
