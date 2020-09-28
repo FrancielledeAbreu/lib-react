@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot renders correctly 1`] = `
+<div
+  className="sc-bdnylx kaUBSj"
+>
+  <h2>
+    Hello
+  </h2>
+  <label
+    className="main"
+  >
+    String-one
+    <input
+      type="checkbox"
+    />
+    <span
+      className="mark"
+    />
+  </label>
+  <label
+    className="main"
+  >
+    String-two
+    <input
+      type="checkbox"
+    />
+    <span
+      className="mark"
+    />
+  </label>
+</div>
+`;
+
+exports[`Snapshot renders empty string 1`] = `
+<div
+  className="sc-bdnylx kaUBSj"
+>
+  <h2>
+    Hello Lib-Kenzie
+  </h2>
+  <label
+    className="main"
+  >
+    
+    <input
+      type="checkbox"
+    />
+    <span
+      className="mark"
+    />
+  </label>
+  <label
+    className="main"
+  >
+    
+    <input
+      type="checkbox"
+    />
+    <span
+      className="mark"
+    />
+  </label>
+  <label
+    className="main"
+  >
+    
+    <input
+      type="checkbox"
+    />
+    <span
+      className="mark"
+    />
+  </label>
+</div>
+`;
