@@ -4,8 +4,7 @@ export const ModalDiv = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 40vw;
-  padding: 100px;
+  padding: 10px;
   z-index: 1000;
   background-color: #fff;
   align-items: center;
@@ -38,6 +37,5 @@ export const ButtonDiv = styled.div`
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-left: 750px;
   flex-direction: column;
 `
