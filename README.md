@@ -79,6 +79,8 @@ class Example extends Component {
 
 \*Children - can receive any ReactNode.
 
+\* styles - can receive a inline style string type
+
 ## Props DropNotifierActions
 
 \*visibility -show and hide the alert.
