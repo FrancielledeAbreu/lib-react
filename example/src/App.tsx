@@ -27,7 +27,7 @@ const App = () => {
       </DropNotifierActions>
       <Input type={true} onClick={handleClick} children='search' />
       <Typography value={1} label='Hello World!' />
-      <Modal isOpen={true} onClose={true}>
+      <Modal isOpen={false} onClose={false}>
         {/* A div deve ser estilizada para ajustar o tamanho do modal */}
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat leo non purus sodales
